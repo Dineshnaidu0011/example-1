@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infinite Rolling Text</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+.scrolling-text-container1 {
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
+.scrolling-text-inner1 {
+    display: flex;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 200;
+    padding: 8px 0;
+}
+
+
+.scrolling-text1 {
+    display: flex;
+}
+
+.scrolling-text-item1 {
+    padding: 0 30px;
+}
+
+
+.scrolling-text-inner1>div {
+    animation: scroll-left 30s linear infinite;
+}
+
+
+.scrolling-text-container1:hover .scrolling-text-inner1>div {
+    animation-play-state: paused;
+}
+.fa-face-smile{
+    color: #F66136;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-left1 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+</style>
+</head>
+<body>
+    <div class="scrolling-text-container1">
+        <div class="scrolling-text-inner1" style="--marquee-speed: 20s; --direction:scroll-left" role="marquee">
+            <div class="scrolling-text1">
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1">Boost Your Brand Online Effectively</div>
+                <div class="scrolling-text-item1"><i class="fa-regular fa-face-smile"></i></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
